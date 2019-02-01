@@ -1,0 +1,17 @@
+var data = {
+  "data": [
+    {
+      "name": "marijuana",
+      "latinName": "smokus deleriumus",
+      "facts": [
+        "makes you see cool shit",
+        "smells like cookies sometimes?",
+        "iz nice"
+      ],
+      "characteristics": [
+        "long-leafed",
+        "looks like a star"
+      ]
+    }
+  ]
+}
