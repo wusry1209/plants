@@ -3,7 +3,7 @@ var data = {
     {
       "name": "marijuana",
       "latinName": "smokus deleriumus",
-      "img": "",
+      "img": "https://triblive.com/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=eOw1aCI3HybIfZS_mmTK8M$daE2N3K4ZzOUsqbU5sYs7oTV7NJGpBO2D83MvV8ndWCsjLu883Ygn4B49Lvm9bPe2QeMKQdVeZmXF$9l$4uCZ8QDXhaHEp3rvzXRJFdy0KqPHLoMevcTLo3h8xh70Y6N_U_CryOsw6FTOdKL_jpQ-&amp;CONTENTTYPE=image/jpeg",
       "facts": [
         "makes you see cool shit",
         "smells like cookies sometimes?",
@@ -21,7 +21,7 @@ var data = {
     {
       "name": "Aloe Vera",
       "latinName": "Aloe spp.",
-      "img": "",
+      "img": "https://cdn1.medicalnewstoday.com/content/images/articles/318/318591/aloe-vera-plants.jpg",
       "facts": [
         "240 different varieties",
         "drought resistant",
