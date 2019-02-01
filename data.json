@@ -3,6 +3,7 @@ var data = {
     {
       "name": "marijuana",
       "latinName": "smokus deleriumus",
+      "img": ""
       "facts": [
         "makes you see cool shit",
         "smells like cookies sometimes?",
@@ -12,6 +13,65 @@ var data = {
         "long-leafed",
         "looks like a star"
       ]
+      "care": [
+        "its weed just put it outside",
+        "dont leave it in your car"]
+    },
+  {
+      "name": "Aloe Vera",
+      "latinName": "Aloe spp.",
+      "img": ""
+      "facts": [
+        "240 different varieties",
+        "drought resistant",
+        "sap is used to treat sunburns"
+      ],
+      "characteristics": [
+        "Lance shaped green stems",
+        "Leaves mature to gray-green"
+      ]
+      "care": [
+        "Dont overwater. Drought resistant",
+        "Place is full sun",
+        "remove dying stems to treat burns"]
+    },
+    {
+      "name": "marijuana",
+      "latinName": "smokus deleriumus",
+      "img": ""
+      "facts": [
+        "makes you see cool shit",
+        "smells like cookies sometimes?",
+        "iz nice"
+      ],
+      "characteristics": [
+        "long-leafed",
+        "looks like a star"
+      ]
+      "care": [
+        "its weed just put it outside",
+        "dont leave it in your car"]
+    },
+}
+
+var dataOne = {
+  "dataOne": [
+    {
+      "name": "Aloe",
+      "latinName": "Aloe spp.", //this needs to be italics//
+      "facts": [
+        "good for sunburns",
+        "needs little water",
+        "need bright sunlight"
+      ],
+      "characteristics": [
+        "long spiney branches",
+        "broken stems provide aloe"
+      ]
+      "care": [
+        "Place in a sunny location",
+        "Water once every two weeks",
+        "Remove any stems that begin to soften"]
     }
   ]
 }
