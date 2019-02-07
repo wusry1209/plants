@@ -1,21 +1,21 @@
 var data = {
   "data": [
     {
-      "name": "marijuana",
-      "latinName": "smokus deleriumus",
-      "img": "https://triblive.com/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=eOw1aCI3HybIfZS_mmTK8M$daE2N3K4ZzOUsqbU5sYs7oTV7NJGpBO2D83MvV8ndWCsjLu883Ygn4B49Lvm9bPe2QeMKQdVeZmXF$9l$4uCZ8QDXhaHEp3rvzXRJFdy0KqPHLoMevcTLo3h8xh70Y6N_U_CryOsw6FTOdKL_jpQ-&amp;CONTENTTYPE=image/jpeg",
+      "name": "Spider Plant",
+      "latinName": "Chlorophytum comosum",
+      "img": "https://photo.floraccess.com/fjph71gst8kgim4lga18avqk9341jh6shfkolmor_bigthumb.jpg",
       "facts": [
-        "makes you see cool shit",
-        "smells like cookies sometimes?",
-        "iz nice"
+        "easy to grow",
+        "reproduces many new plants",
+        "Native to South Africa"
       ],
       "characteristics": [
-        "long-leafed",
-        "looks like a star"
+        "long thing leaf",
+        "sometimes green or striped white"
       ],
       "care": [
-        "its weed just put it outside",
-        "dont leave it in your car"
+        "part shade to full shad",
+        "keep moderately moist"
       ]
     },
     {
