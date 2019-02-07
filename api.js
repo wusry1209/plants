@@ -41,9 +41,46 @@ var createTemplate = (plant) => {
     </div>
   `
 
-  // result of calling createTemplate(plant) will be this template
   return template
 }
 
-// call this function once on page load to load first plant
+
 getNextPlant()
+
+//back button
+var getLastPlant = () => {
+//this isn't right. Whats my current index? Could be anything
+  var currentIndex = 0
+
+  var currentPlant = data.data[currentIndex]
+
+  currentIndex--
+
+  document.body.innerHTML = createTemplate(currentPlant)
+}
+
+var createTemplate = (plant) => {
+  var template = `
+    <h1>HOUSEPLANTS RULE</h1>
+    <div>
+      <img class="image1" src="${plant.img}"/>
+    </div>
+    <h2>${plant.name}</h2>
+    <h6><em>${plant.latinName}</em></h6>
+    <h6>${plant.facts}</h6>
+    <h6>${plant.characteristics}</h6>
+    <h6>${plant.care}</h6>
+    <div class="button-container">
+      <input type="button" value="details" OnClick="fire()"/>
+    </div>
+    <div class="button-container">
+      <input type="button" value="Next Plant" OnClick="getNextPlant()"/>
+    </div>
+    <div class="button-container">
+    <input type="button" value="Last Plant" OnClick="getLastPlant()"/>
+  </div>
+  `
+  return template
+}
+
+getLastPlant()

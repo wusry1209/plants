@@ -1,0 +1,29 @@
+body {
+    padding: 10px;
+    margin: 10px;
+    background: #eee;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+    text-align: center
+  }
+
+  h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+  h6 {
+    text-align: center;
+  }
+
+  .image1 {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .button-container {
+    text-align: center;
+    margin: auto;
+  }
