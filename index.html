@@ -6,6 +6,16 @@
     <title>HTML form</title>
   </head>
   <body>
+    <div id='render'></div>
+    <div class="button-container">
+      <input type="button" value="details" OnClick="fire()"/>
+    </div>
+    <div class="button-container">
+      <input type="button" value="Next Plant" OnClick="getNextPlant()"/>
+    </div>
+    <div class="button-container">
+      <input type="button" value="Prev Plant" OnClick="getPrevPlant()"/>
+    </div>
   </body>
   <script type="text/javascript" src="./data.json"></script>
   <script src="./api.js"></script>

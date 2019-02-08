@@ -1,97 +1,95 @@
-var data = {
-  "data": [
-    {
-      "name": "Spider Plant",
-      "latinName": "Chlorophytum comosum",
-      "img": "https://photo.floraccess.com/fjph71gst8kgim4lga18avqk9341jh6shfkolmor_bigthumb.jpg",
-      "facts": [
-        "easy to grow",
-        "reproduces many new plants",
-        "Native to South Africa"
-      ],
-      "characteristics": [
-        "long thing leaf",
-        "sometimes green or striped white"
-      ],
-      "care": [
-        "part shade to full shad",
-        "keep moderately moist"
-      ]
-    },
-    {
-      "name": "Aloe Vera",
-      "latinName": "Aloe spp.",
-      "img": "https://cdn1.medicalnewstoday.com/content/images/articles/318/318591/aloe-vera-plants.jpg",
-      "facts": [
-        "240 different varieties",
-        "drought resistant",
-        "sap is used to treat sunburns"
-      ],
-      "characteristics": [
-        "Lance shaped green stems",
-        "Leaves mature to gray-green"
-      ],
-      "care": [
-        "Dont overwater. Drought resistant",
-        "Place is full sun",
-        "remove dying stems to treat burns"
-      ]
-    },
-    {
-      "name": "Jade Plant",
-      "latinName": "Crassula argentea",
-      "img": "https://plants.ces.ncsu.edu/media/images/Crassula_argentea_plant_Forest_and_Kim_Starr_ccby2.0.jpg",
-      "facts": [
-        "Also known as a Money Tree",
-        "Native to South America",
-        "Valued for its bonsai capabilities"
-      ],
-      "characteristics": [
-        "Evergreen",
-        "animal and child safe",
-        "Thick branches"
-      ],
-      "care": [
-        "Only water once soil is completly dry",
-        "Keep in indirect sunlight"
-      ]
-    },
-    {
-      "name": "English Ivy",
-      "latinName": "Hedera helix",
-      "img": "https://cdn.shopify.com/s/files/1/2097/3287/products/ivy_green_copy_2000x.jpg?v=1506701388",
-      "facts": [
-        "Great for an outdoor covering as well as an indoor potted plant",
-        "Native to Europe and western Asia",
-        "Produces flowers in the late summer"
-      ],
-      "characteristics": [
-        "Evergreen",
-        "Not animal and child safe",
-        "Long leafy vines"
-      ],
-      "care": [
-        "Prefers a moist soil",
-        "Keep in indirect sunlight"
-      ]
-    },
-    {
-      "name": "Avocado",
-      "latinName": "Persea americana",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Avocado_Seedling.jpg/800px-Avocado_Seedling.jpg",
-      "facts": [
-        "Easy to start from any avocado pit",
-        "Native to South Central Mexico",
-        "Can take years to produce new avocado"
-      ],
-      "characteristics": [
-        "Not animal and child safe",
-        "Long flat broad leaves"
-      ],
-      "care": [
-        "Prefers a moist soil",
-        "Keep in direct sunlight"
-      ]
-    }
-  ]
-}
+var data = [
+  {
+    "name": "Spider Plant",
+    "latinName": "Chlorophytum comosum",
+    "img": "https://photo.floraccess.com/fjph71gst8kgim4lga18avqk9341jh6shfkolmor_bigthumb.jpg",
+    "facts": [
+      "easy to grow",
+      "reproduces many new plants",
+      "Native to South Africa"
+    ],
+    "characteristics": [
+      "long thing leaf",
+      "sometimes green or striped white"
+    ],
+    "care": [
+      "part shade to full shad",
+      "keep moderately moist"
+    ]
+  },
+  {
+    "name": "Aloe Vera",
+    "latinName": "Aloe spp.",
+    "img": "https://cdn1.medicalnewstoday.com/content/images/articles/318/318591/aloe-vera-plants.jpg",
+    "facts": [
+      "240 different varieties",
+      "drought resistant",
+      "sap is used to treat sunburns"
+    ],
+    "characteristics": [
+      "Lance shaped green stems",
+      "Leaves mature to gray-green"
+    ],
+    "care": [
+      "Dont overwater. Drought resistant",
+      "Place is full sun",
+      "remove dying stems to treat burns"
+    ]
+  },
+  {
+    "name": "Jade Plant",
+    "latinName": "Crassula argentea",
+    "img": "https://plants.ces.ncsu.edu/media/images/Crassula_argentea_plant_Forest_and_Kim_Starr_ccby2.0.jpg",
+    "facts": [
+      "Also known as a Money Tree",
+      "Native to South America",
+      "Valued for its bonsai capabilities"
+    ],
+    "characteristics": [
+      "Evergreen",
+      "animal and child safe",
+      "Thick branches"
+    ],
+    "care": [
+      "Only water once soil is completly dry",
+      "Keep in indirect sunlight"
+    ]
+  },
+  {
+    "name": "English Ivy",
+    "latinName": "Hedera helix",
+    "img": "https://cdn.shopify.com/s/files/1/2097/3287/products/ivy_green_copy_2000x.jpg?v=1506701388",
+    "facts": [
+      "Great for an outdoor covering as well as an indoor potted plant",
+      "Native to Europe and western Asia",
+      "Produces flowers in the late summer"
+    ],
+    "characteristics": [
+      "Evergreen",
+      "Not animal and child safe",
+      "Long leafy vines"
+    ],
+    "care": [
+      "Prefers a moist soil",
+      "Keep in indirect sunlight"
+    ]
+  },
+  {
+    "name": "Avocado",
+    "latinName": "Persea americana",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Avocado_Seedling.jpg/800px-Avocado_Seedling.jpg",
+    "facts": [
+      "Easy to start from any avocado pit",
+      "Native to South Central Mexico",
+      "Can take years to produce new avocado"
+    ],
+    "characteristics": [
+      "Not animal and child safe",
+      "Long flat broad leaves"
+    ],
+    "care": [
+      "Prefers a moist soil",
+      "Keep in direct sunlight"
+    ]
+  }
+]

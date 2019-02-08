@@ -1,27 +1,46 @@
-// this function is just to log the data to the console to see data structure
-var fire = () => {
-  var local_data = data
-  console.log('read value', local_data)
-  console.log('latinName', local_data.data[0].latinName)
-}
-
-fire()
+// import JSON data (someday via api call)
+var DATA = data
 
 // start with the 0th item in the data array
 var currentIndex = 0
 
 var getNextPlant = () => {
-  // pull plant out of data.data (which is an array) via current index
-  var currentPlant = data.data[currentIndex]
+  var plantIndex = currentIndex + 1
 
-  // increase current index by 1 since we want the next plant to be current
-  currentIndex++
+  if (currentIndex === DATA.length - 1) {
+    // if last in array, set to 0th index
+    plantIndex = 0
+  }
 
-  // this sets body's innerHTML to a string of injected html with current plant info
-  document.body.innerHTML = createTemplate(currentPlant)
+  var nextPlant = DATA[plantIndex]
+
+  // if plant index is not 0, increase by 1, else if it IS 0 set current index to 0
+  plantIndex !== 0 ? currentIndex++ : currentIndex = 0
+
+  var html = createTemplate(nextPlant)
+
+  renderHTML(html)
+}
+
+var getPrevPlant = () => {
+  // this is next index to be chosen
+  var plantIndex = currentIndex - 1
+
+  if (currentIndex === 0) {
+    // if already on 0th plant, set index to last in array
+    plantIndex = DATA.length - 1
+    currentIndex = DATA.length - 1
+  } else {
+    currentIndex--
+  }
+
+  var prevPlant = DATA[plantIndex]
+  
+  renderHTML(createTemplate(prevPlant))
 }
 
 var createTemplate = (plant) => {
+  if (!plant) return console.error('plant value is not defined in createTemplate!')
   // this string injects variables from the plant object which is passed in when createTemplate() is called
   var template = `
     <h1>HOUSEPLANTS RULE</h1>
@@ -33,54 +52,22 @@ var createTemplate = (plant) => {
     <h6>${plant.facts}</h6>
     <h6>${plant.characteristics}</h6>
     <h6>${plant.care}</h6>
-    <div class="button-container">
-      <input type="button" value="details" OnClick="fire()"/>
-    </div>
-    <div class="button-container">
-      <input type="button" value="Next Plant" OnClick="getNextPlant()"/>
-    </div>
   `
 
   return template
 }
 
-
-getNextPlant()
-
-//back button
-var getLastPlant = () => {
-//this isn't right. Whats my current index? Could be anything
-  var currentIndex = 0
-
-  var currentPlant = data.data[currentIndex]
-
-  currentIndex--
-
-  document.body.innerHTML = createTemplate(currentPlant)
+var renderHTML = html => {
+  // this sets body's innerHTML to a string of injected html with current plant info
+  document.getElementById('render').innerHTML = html
 }
 
-var createTemplate = (plant) => {
-  var template = `
-    <h1>HOUSEPLANTS RULE</h1>
-    <div>
-      <img class="image1" src="${plant.img}"/>
-    </div>
-    <h2>${plant.name}</h2>
-    <h6><em>${plant.latinName}</em></h6>
-    <h6>${plant.facts}</h6>
-    <h6>${plant.characteristics}</h6>
-    <h6>${plant.care}</h6>
-    <div class="button-container">
-      <input type="button" value="details" OnClick="fire()"/>
-    </div>
-    <div class="button-container">
-      <input type="button" value="Next Plant" OnClick="getNextPlant()"/>
-    </div>
-    <div class="button-container">
-    <input type="button" value="Last Plant" OnClick="getLastPlant()"/>
-  </div>
-  `
-  return template
+var initialLoad = () => {
+  // current index starts at 0
+  var initialPlant = DATA[currentIndex]
+
+  renderHTML(createTemplate(initialPlant))
 }
 
-getLastPlant()
+// load 0th index on page load
+initialLoad()
